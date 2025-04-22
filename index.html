@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Talleres presenciales con materiales incluidos. Pintura en Tote Bag, botánica, cerámica y arte terapéutico en Buenos Aires. Facilitado por docentes apasionadas.">
+  <meta name="keywords" content="talleres, arte, naturaleza, transformación, Buenos Aires, pintura, botánica, cerámica, arte terapéutico" />
+  <meta name="author" content="Pame & Ani" />
+  <title>Pame & Ani | Talleres creativos en Buenos Aires - Arte, naturaleza y transformación</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-roboto">
+
+<!-- Navbar -->
+<header class="fixed top-0 w-full z-50">
+  <!-- Falso fondo con blur en la parte inferior -->
+  <div class="absolute inset-0 h-full bg-white shadow-md z-0">
+    <div class="absolute bottom-0 w-full h-6 backdrop-blur-md"></div>
+  </div>
+
+  <nav class="relative z-10 max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Logo -->
+    <div class="flex items-center space-x-4">
+      <div class="bg-white rounded-full p-1 shadow-lg">
+        <img src="/logo.png" alt="Logo Pame & Ani" class="w-16 h-16 rounded-full object-cover" />
+      </div>
+    </div>
+  
+    <!-- Botón Hamburguesa -->
+    <div class="md:hidden flex items-center">
+      <button id="hamburger" class="text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Menú en Desktop -->
+    <ul class="hidden md:flex space-x-6 text-sm font-semibold tracking-wide">
+      <li><a href="#inicio" class="relative text-verdePame hover:text-naranjaAni link-underline">Inicio</a></li>
+      <li><a href="#talleres" class="relative text-verdePame hover:text-naranjaAni link-underline">Talleres</a></li>
+      <li><a href="#contacto" class="relative text-verdePame hover:text-naranjaAni link-underline">Contacto</a></li>
+    </ul>
+  
+    <!-- Menú en Mobile -->
+    <ul id="mobileMenu" class="md:hidden hidden absolute top-24 right-6 bg-white shadow-md rounded-lg py-4 w-48 z-50">
+      <li><a href="#inicio" class="block px-4 py-2 text-sm text-verdePame hover:text-naranjaAni transition-colors">Inicio</a></li>
+      <li><a href="#talleres" class="block px-4 py-2 text-sm text-verdePame hover:text-naranjaAni transition-colors">Talleres</a></li>
+      <li><a href="#contacto" class="block px-4 py-2 text-sm text-verdePame hover:text-naranjaAni transition-colors">Contacto</a></li>
+    </ul>
+  </nav>
+  
+</header>
+
+
+<!-- Sección Principal -->
+<section id="inicio"
+  class="relative py-20 px-6 text-white pt-32"
+  style="background-image: url('/foto-presentacion.jpg'); background-size: cover; background-position: center;">
+  <!-- Capa oscura + blur -->
+  <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+
+  <!-- Efecto de partículas -->
+  <div class="absolute inset-0 z-0">
+    <canvas id="particles-js"></canvas>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto text-center mb-16">
+    <h2 class="text-4xl font-bold drop-shadow-lg">¡Hola! Somos Pame y Ani</h2>
+    <p class="mt-4 text-lg max-w-2xl mx-auto drop-shadow">
+      Docentes y creadoras de experiencias donde el arte, la naturaleza y la transformación se encuentran 🌿✨
+    </p>
+  </div>
+
+  <div class="relative z-10 grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+    <!-- Pame -->
+    <div id="pame" class="persona opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+      <img src="foto-pame.jpg" alt="Foto de Pame" class="w-64 mx-auto rounded-xl shadow-xl mb-4 hover:scale-105 transform transition duration-300" />
+      <h3 class="font-semibold text-2xl text-[#a5bb8a] text-center">Pamela Spahn</h3>
+      <p class="mt-2 text-sm text-white text-center px-4">
+        Profe de primaria y artista autodidacta. Explora técnicas sin estructura académica formal.
+      </p>
+      <div class="text-center mt-4">
+        <button class="px-6 py-2 bg-[#a5bb8a] text-white rounded-full shadow-md hover:bg-[#8c9f75] transition-colors">Ver más</button>
+      </div>
+    </div>
+
+    <!-- Ani -->
+    <div id="ani" class="persona opacity-0 translate-y-10 transition-all duration-700 ease-in-out delay-300">
+      <img src="foto-ani.jpg" alt="Foto de Ani" class="w-64 mx-auto rounded-xl shadow-xl mb-4 hover:scale-105 transform transition duration-300" />
+      <h3 class="font-semibold text-2xl text-[#f09a81] text-center">Analia Petruccelli</h3>
+      <p class="mt-2 text-sm text-white text-center px-4">
+        Psicopedagoga y docente. Cree en el arte como camino de transformación y autoconocimiento.
+      </p>
+      <div class="text-center mt-4">
+        <button class="px-6 py-2 bg-[#f09a81] text-white rounded-full shadow-md hover:bg-[#e38e73] transition-colors">Ver más</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    </div>
+  </section>
+
+  <!-- Talleres -->
+  <main class="p-6 max-w-7xl mx-auto mt-10" id="talleres">
+    <section>
+      <h2 class="text-3xl font-semibold text-[#b59edb] mb-6 text-center">Talleres que ofrecemos</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Tarjetas de talleres -->
+          <!-- Taller: Pintura en Tote Bag -->
+          <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
+            <img src="/taller-totebag.jpg" alt="Tote Bag" class="w-full h-48 object-cover rounded-md mb-4" />
+            <h3 class="text-xl font-semibold text-[#b59edb] mb-2">Pintura en "Tote Bag"</h3>
+            <p class="text-sm text-gray-600 mb-4">Incluye: bolsa de tela pintada, diseños a elección y teoría del color.</p>
+            <button onclick="openModal(talleres[0])" class="px-4 py-2 bg-[#b59edb] text-white rounded-full hover:bg-[#a289c7] transition">Ver más</button>
+          </div>
+
+          <!-- Taller: Botánica y Macetas -->
+          <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
+            <img src="/botanica-macetas.png" alt="Macetas" class="w-full h-48 object-cover rounded-md mb-4" />
+            <h3 class="text-xl font-semibold text-[#a5bb8a] mb-2">Botánica y Macetas</h3>
+            <p class="text-sm text-gray-600 mb-4">Incluye: armado de sustrato, cuidados de la planta y pintura creativa.</p>
+            <button onclick="openModal(talleres[1])" class="px-4 py-2 bg-[#a5bb8a] text-white rounded-full hover:bg-[#8c9f75] transition">Ver más</button>
+          </div>
+
+          <!-- Taller: Botánica y Grabado de Sellos -->
+          <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
+            <img src="/botanica-sellos.png" alt="Grabado" class="w-full h-48 object-cover rounded-md mb-4" />
+            <h3 class="text-xl font-semibold text-[#f09a81] mb-2">Botánica y Grabado de Sellos</h3>
+            <p class="text-sm text-gray-600 mb-4">Incluye: tintura madre, oráculo herbal y sello en linóleo de planta medicinal.</p>
+            <button onclick="openModal(talleres[2])" class="px-4 py-2 bg-[#f09a81] text-white rounded-full hover:bg-[#e38e73] transition">Ver más</button>
+          </div>
+
+          <!-- Taller: Sahumos y Cerámica -->
+          <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
+            <img src="/sahumos-ceramica.png" alt="Sahumos y Cerámica" class="w-full h-48 object-cover rounded-md mb-4" />
+            <h3 class="text-xl font-semibold text-[#7db1b1] mb-2">Sahumos y Cerámica</h3>
+            <p class="text-sm text-gray-600 mb-4">Incluye: armado de sahumos naturales y creación de sahumador en cerámica.</p>
+            <button onclick="openModal(talleres[3])" class="px-4 py-2 bg-[#7db1b1] text-white rounded-full hover:bg-[#68a2a2] transition">Ver más</button>
+          </div>
+
+      </div>
+    </section>
+
+  </main>
+
+        <!-- Instagram -->
+      <section id="instagram" class="py-16 px-6 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-3xl font-semibold text-[#b59edb] mb-6">Nuestro día a día en Instagram ✨</h2>
+          <p class="text-gray-700 mb-10">Compartimos momentos de nuestros talleres, procesos creativos y arte en comunidad.</p>
+        
+          <!-- Grilla de publicaciones -->
+          <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+
+            <!-- Publicación 1 -->
+            <blockquote class="instagram-media" data-instgrm-captioned data-aos="fade-up"
+              data-instgrm-permalink="https://www.instagram.com/p/DIsCo3Isihm/?utm_source=ig_embed&amp;utm_campaign=loading"
+              data-instgrm-version="14"
+              style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); max-width:540px; min-width:326px; padding:0; width:100%;">
+            </blockquote>
+          
+            <!-- Publicación 2 -->
+            <blockquote class="instagram-media" data-instgrm-captioned data-aos="fade-up"
+              data-instgrm-permalink="https://www.instagram.com/p/DIpOdGbRe_1/?utm_source=ig_embed&amp;utm_campaign=loading"
+              data-instgrm-version="14"
+              style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); max-width:540px; min-width:326px; padding:0; width:100%;">
+            </blockquote>
+          
+            <!-- Publicación 3 (Reel) -->
+            <blockquote class="instagram-media" data-instgrm-captioned data-aos="fade-up"
+              data-instgrm-permalink="https://www.instagram.com/reel/DIrRjZfxe7R/?utm_source=ig_embed&amp;utm_campaign=loading"
+              data-instgrm-version="14"
+              style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); max-width:540px; min-width:326px; padding:0; width:100%;">
+            </blockquote>
+          </div>
+        
+          <!-- Botón para ver más -->
+          <a href="https://www.instagram.com/puroarte.taller" target="_blank" class="mt-10 inline-block bg-[#b59edb] text-white px-6 py-3 rounded-full shadow-md hover:bg-[#a289c7] transition">
+            Ver más en Instagram
+          </a>
+        </div>
+      
+        <!-- Script de Instagram -->
+        <script async src="//www.instagram.com/embed.js"></script>
+      </section>
+
+      <!-- Inscripción -->
+      <section id="inscripcion" class="bg-[#f9f5ff] py-16 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-semibold text-[#b59edb] mb-4">¿Querés inscribirte o hacer una consulta?</h2>
+          <p class="text-gray-700 mb-8">Escribinos por WhatsApp y te pasamos toda la info para sumarte al taller que más te guste. 🌿✨</p>
+        
+          <div class="flex flex-col gap-6 md:flex-row md:justify-center">
+            <!-- Botón Pame -->
+            <a href="https://wa.me/5491157234409?text=Hola%20Pame!%20Quiero%20inscribirme%20a%20un%20taller%20💜" target="_blank"
+              class="bg-[#a5bb8a] text-white px-6 py-3 rounded-full shadow-md hover:bg-[#8c9f75] transition">
+              Escribir a Pame
+            </a>
+          
+            <!-- Botón Ani -->
+            <a href="https://wa.me/5491166778899?text=Hola%20Ani!%20Estoy%20interesada%20en%20los%20talleres%20🌸" target="_blank"
+              class="bg-[#f09a81] text-white px-6 py-3 rounded-full shadow-md hover:bg-[#e38e73] transition">
+              Escribir a Ani
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-gray-800 text-white py-10 mt-16" id="contacto">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left items-center">
+          
+          <!-- Logo + Marca -->
+          <div class="flex flex-col items-center md:items-start">
+            <img src="/logo.png" alt="Logo Pame & Ani" class="w-40 h-40 object-contain mb-3 drop-shadow-md" />
+            <h3 class="text-xl font-bold text-[#b59edb]">Pame & Ani</h3>
+            <p class="text-sm mt-2 text-gray-300">Talleres creativos que combinan arte, naturaleza y transformación 🌿</p>
+          </div>
+      
+          <!-- Enlaces -->
+          <div>
+            <h4 class="text-sm font-semibold uppercase mb-2">Enlaces</h4>
+            <ul class="text-sm space-y-1">
+              <li><a href="#inicio" class="hover:underline text-gray-300">Inicio</a></li>
+              <li><a href="#talleres" class="hover:underline text-gray-300">Talleres</a></li>
+              <li><a href="#inscripcion" class="hover:underline text-gray-300">Inscripción</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contacto -->
+          <div>
+            <h4 class="text-sm font-semibold uppercase mb-2">Contacto</h4>
+            <p class="text-sm text-gray-300">WhatsApp:</p>
+            <p class="text-sm text-gray-300">Pame: <a href="https://wa.me/5491122334455" class="underline">+54 9 11 2233 4455</a></p>
+            <p class="text-sm text-gray-300">Ani: <a href="https://wa.me/5491166778899" class="underline">+54 9 11 6677 8899</a></p>
+          </div>
+        </div>
+      
+        <div class="text-center text-xs text-gray-400 mt-8">
+          © 2025 Pame & Ani. Todos los derechos reservados.
+        </div>
+      </footer>
+      
+  
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden z-50">
+    <div class="bg-white rounded-lg w-11/12 max-w-2xl p-8 relative">
+      <button id="closeModal" class="absolute top-2 right-2 text-xl text-gray-600 hover:text-gray-800">✖</button>
+      <h3 id="modalTitle" class="text-3xl font-semibold mb-4 text-center text-[#a5bb8a]"></h3>
+      <div id="modalContent" class="text-lg text-gray-700"></div>
+      <div class="text-center mt-4">
+        <button class="px-6 py-2 bg-[#a5bb8a] text-white rounded-full shadow-md hover:bg-[#8c9f75] transition-colors" onclick="closeModal()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+
+</html>
