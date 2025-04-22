@@ -15,6 +15,11 @@
 
 <body class="bg-gray-50 text-gray-800 font-roboto">
 
+<!-- Intro animado con Lottie -->
+<div id="lottieIntro" class="fixed inset-0 bg-white z-[100] flex items-center justify-center transition-opacity duration-1000 w-full overflow-hidden">
+  <div id="lottieContainer" class="w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80"></div>
+</div>
+
 <!-- Navbar -->
 <header class="fixed top-0 w-full z-50">
   <!-- Falso fondo con blur en la parte inferior -->
@@ -46,8 +51,8 @@
       <li><a href="#contacto" class="relative text-verdePame hover:text-naranjaAni link-underline">Contacto</a></li>
     </ul>
   
-    <!-- Menú en Mobile -->
-    <ul id="mobileMenu" class="md:hidden hidden absolute top-24 right-6 bg-white shadow-md rounded-lg py-4 w-48 z-50">
+   <!-- Menú en Mobile -->
+    <ul id="mobileMenu" class="md:hidden hidden absolute top-24 left-4 right-4 bg-white shadow-md rounded-lg py-4 z-50 w-auto max-w-[calc(100vw-2rem)]">
       <li><a href="#inicio" class="block px-4 py-2 text-sm text-verdePame hover:text-naranjaAni transition-colors">Inicio</a></li>
       <li><a href="#talleres" class="block px-4 py-2 text-sm text-verdePame hover:text-naranjaAni transition-colors">Talleres</a></li>
       <li><a href="#contacto" class="block px-4 py-2 text-sm text-verdePame hover:text-naranjaAni transition-colors">Contacto</a></li>
@@ -150,6 +155,39 @@
     </section>
 
   </main>
+         <!-- Testimonios -->
+      <section id="testimonios" class="py-16 px-6 bg-[#fef9ff]">
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-3xl font-semibold text-[#b59edb] mb-10">Testimonios 💬</h2>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+            
+            <!-- Irene -->
+            <div class="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-lg transition" data-aos="fade-up">
+              <p class="text-gray-700 italic">"Realmente una experiencia única, las chicas me explicaron cómo crear colores y usar la imaginación desde mi perspectiva, y ver lo que iba logrando me animó a pintar sin miedo! Ni hablar cuando lo vi terminado! Gracias chicas, por la paciencia y el amor en este taller!"</p>
+              <h4 class="mt-4 font-bold text-[#b59edb]">- Irene Vera</h4>
+            </div>
+          
+            <!-- Yolanda -->
+            <div class="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+              <p class="text-gray-700 italic">"Hola chicas, participé del primer taller y me encantó. Me ayudaron con el diseño que elegí y a buscar los colores que mejor quedaban. Una linda experiencia, ¡mi bolsita quedó hermosa!"</p>
+              <h4 class="mt-4 font-bold text-[#a5bb8a]">- Yolanda Cabrera</h4>
+            </div>
+          
+            <!-- Belén -->
+            <div class="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+              <p class="text-gray-700 italic">"Hermoso el taller de pintura sobre tela! Aprendí a usar el círculo cromático y cómo pintar... además había una merienda riquísima para compartir. ¡Una linda experiencia que volvería a pasar!"</p>
+              <h4 class="mt-4 font-bold text-[#f09a81]">- Belén Spahn</h4>
+            </div>
+          
+            <!-- Anto -->
+            <div class="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
+              <p class="text-gray-700 italic">"Gracias por tan linda experiencia! Las profes me explicaron desde cómo elegir los colores hasta cómo pintar. Me sorprendí de lo lindo que me quedó! La pasé muy bien. Una tarde muy cálida! ¡Volveré!"</p>
+              <h4 class="mt-4 font-bold text-[#7db1b1]">- Anto</h4>
+            </div>
+          
+          </div>
+        </div>
+      </section>
 
         <!-- Instagram -->
       <section id="instagram" class="py-16 px-6 bg-white">
@@ -262,6 +300,7 @@
     </div>
   </div>
 
+  <script src="https://unpkg.com/lottie-web@5.9.4/build/player/lottie.min.js"></script>
   <script src="src/main.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>

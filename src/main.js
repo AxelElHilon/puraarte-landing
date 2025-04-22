@@ -116,3 +116,20 @@ const talleres = [
     interests: "Ceremonia, manualidades, conexión espiritual."
   }
 ];
+
+//Animacion logo principio
+const anim = lottie.loadAnimation({
+  container: document.getElementById('lottieContainer'),
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: '/logo-pameani.json' // 🟣 Esta es tu animación
+});
+
+anim.addEventListener('complete', () => {
+  const intro = document.getElementById('lottieIntro');
+  intro.classList.add('opacity-0');
+  setTimeout(() => {
+    intro.style.display = 'none';
+  }, 1000); // Matchea con Tailwind: duration-1000
+});
