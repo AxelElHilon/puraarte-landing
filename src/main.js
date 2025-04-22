@@ -117,6 +117,8 @@ const talleres = [
   }
 ];
 
+window.talleres = talleres;
+
 //Animacion logo principio
 const anim = lottie.loadAnimation({
   container: document.getElementById('lottieContainer'),
@@ -133,3 +135,6 @@ anim.addEventListener('complete', () => {
     intro.style.display = 'none';
   }, 1000); // Matchea con Tailwind: duration-1000
 });
+
+window.openModal = openModal;
+window.closeModal = closeModal;

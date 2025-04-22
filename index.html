@@ -120,7 +120,7 @@
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <!-- Tarjetas de talleres -->
           <!-- Taller: Pintura en Tote Bag -->
-          <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition flex flex-col justify-between h-full">
+          <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
             <img src="/taller-totebag.jpg" alt="Tote Bag" class="w-full h-48 object-cover rounded-md mb-4" />
             <h3 class="text-xl font-semibold text-[#b59edb] mb-2">Pintura en "Tote Bag"</h3>
             <p class="text-sm text-gray-600 mb-4">Incluye: bolsa de tela pintada, diseños a elección y teoría del color.</p>
@@ -128,7 +128,7 @@
           </div>
 
           <!-- Taller: Botánica y Macetas -->
-          <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition flex flex-col justify-between h-full">
+          <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
             <img src="/botanica-macetas.png" alt="Macetas" class="w-full h-48 object-cover rounded-md mb-4" />
             <h3 class="text-xl font-semibold text-[#a5bb8a] mb-2">Botánica y Macetas</h3>
             <p class="text-sm text-gray-600 mb-4">Incluye: armado de sustrato, cuidados de la planta y pintura creativa.</p>
@@ -136,7 +136,7 @@
           </div>
 
           <!-- Taller: Botánica y Grabado de Sellos -->
-          <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition flex flex-col justify-between h-full">
+          <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
             <img src="/botanica-sellos.png" alt="Grabado" class="w-full h-48 object-cover rounded-md mb-4" />
             <h3 class="text-xl font-semibold text-[#f09a81] mb-2">Botánica y Grabado de Sellos</h3>
             <p class="text-sm text-gray-600 mb-4">Incluye: tintura madre, oráculo herbal y sello en linóleo de planta medicinal.</p>
@@ -144,7 +144,7 @@
           </div>
 
           <!-- Taller: Sahumos y Cerámica -->
-          <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition flex flex-col justify-between h-full">
+          <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
             <img src="/sahumos-ceramica.png" alt="Sahumos y Cerámica" class="w-full h-48 object-cover rounded-md mb-4" />
             <h3 class="text-xl font-semibold text-[#7db1b1] mb-2">Sahumos y Cerámica</h3>
             <p class="text-sm text-gray-600 mb-4">Incluye: armado de sahumos naturales y creación de sahumador en cerámica.</p>
@@ -288,22 +288,22 @@
       
   
 
-  <!-- Modal -->
-  <div id="modal" class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden z-50">
-    <div class="bg-white rounded-lg w-11/12 max-w-2xl p-8 relative">
-      <button id="closeModal" class="absolute top-2 right-2 text-xl text-gray-600 hover:text-gray-800">✖</button>
-      <h3 id="modalTitle" class="text-3xl font-semibold mb-4 text-center text-[#a5bb8a]"></h3>
-      <div id="modalContent" class="text-lg text-gray-700"></div>
-      <div class="text-center mt-4">
-        <button class="px-6 py-2 bg-[#a5bb8a] text-white rounded-full shadow-md hover:bg-[#8c9f75] transition-colors" onclick="closeModal()">Cerrar</button>
-      </div>
+ <!-- Modal -->
+ <div id="modal" class="fixed inset-0 hidden z-50 bg-black bg-opacity-50">
+  <div class="relative mx-auto my-auto bg-white rounded-lg w-11/12 max-w-2xl p-8">
+    <button id="closeModal" class="absolute top-2 right-2 text-xl text-gray-600 hover:text-gray-800">&#10006;</button>
+    <h3 id="modalTitle" class="text-3xl font-semibold mb-4 text-center text-[#a5bb8a]"></h3>
+    <div id="modalContent" class="text-lg text-gray-700"></div>
+    <div class="text-center mt-4">
+      <button onclick="closeModal()" class="px-6 py-2 bg-[#a5bb8a] text-white rounded-full shadow-md hover:bg-[#8c9f75] transition-colors">Cerrar</button>
     </div>
   </div>
+</div>
 
   <script src="https://unpkg.com/lottie-web@5.9.4/build/player/lottie.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
-  <script type="module" src="src/main.js"></script>
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
