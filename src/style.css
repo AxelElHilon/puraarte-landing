@@ -8,19 +8,6 @@
   --violeta: #b59edb;
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img, video {
-  max-width: 100%;
-  height: auto;
-}
 
 /* Estilos generales */
 body {
