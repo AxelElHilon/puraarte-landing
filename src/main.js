@@ -138,3 +138,6 @@ anim.addEventListener('complete', () => {
 
 window.openModal = openModal;
 window.closeModal = closeModal;
+
+//Mensaje preescrito
+
