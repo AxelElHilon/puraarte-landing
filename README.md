@@ -6,7 +6,7 @@ Bienvenid@s a **Puro Arte**, un portfolio digital diseñado para mostrar el trab
 
 ## 🚀 Sitio en producción
 
-🔗 [Ver sitio en vivo](https://pame-spahn.vercel.app)
+🔗 [Ver sitio en vivo](https://puraarte-landing.vercel.app/)
 
 ---
 
