@@ -44,15 +44,15 @@ function closeModal() {
 const pame = {
   name: "Pamela Spahn",
   profession: "Profe de primaria y artista autodidacta",
-  description: "Explora técnicas sin estructura académica formal. Le apasiona el arte como forma de expresión personal y de conexión con los demás.",
-  interests: "Artes plásticas, naturaleza, creatividad sin límites."
+  description: "Le apasiona el arte como forma de expresión personal y de conexión con los demás.",
+  interests: "Artes plásticas, creatividad sin límites."
 };
 
 const ani = {
   name: "Analia Petruccelli",
   profession: "Psicopedagoga y docente",
   description: "Cree en el arte como camino de transformación y autoconocimiento. Le interesa acompañar a los demás en su proceso de crecimiento personal.",
-  interests: "Arte terapéutico, pedagogía, creatividad en la educación."
+  interests: "Arte terapéutico, pedagogía, naturaleza, creatividad en la educación."
 };
 
 // Esperar a que cargue todo el DOM
